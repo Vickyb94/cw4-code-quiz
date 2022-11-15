@@ -68,13 +68,13 @@
   }
   
   .answerChoiceButtons {
-    background-color: blueviolet;
+    background-color: blue;
     color: white;
-    padding: 5px 0;
+    padding: 10px 0;
   }
   
   .answerChoiceButtons:hover {
-    background-color: lightgreen;
+    background-color: rgb(119, 225, 233);
     color: black;
   }
   #main-sub-content {
@@ -90,24 +90,24 @@
   }
   
   .startButton {
-    background-color: blueviolet;
+    background-color: blue;
     color: white;
     padding: 5px 0;
   }
   
   .startButton:hover {
-    background-color: lightgreen;
+    background-color: rgb(119, 225, 233);
     color: black;
   }
   
   .submitButton {
-    background-color: blueviolet;
+    background-color: blue;
     color: white;
     padding: 5px 0;
   }
   
   .submitButton:hover {
-    background-color: lightgreen;
+    background-color: rgb(119, 225, 233);
     color: black;
   }
   
@@ -117,6 +117,4 @@
     justify-content: flex-end;
     margin-top: auto;
     margin-right: 35px;
-    /* position: fixed;
-    bottom: 0;  */
   }
