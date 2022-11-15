@@ -1,0 +1,122 @@
+/*buttons styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px 40px;
+    z-index: 9999;
+  }
+  /*high-score styling*/
+  header div a {
+    text-decoration: none;
+    color: blue;
+    font-size: 30px;
+    padding: 20px;
+  }
+  
+  header div a:hover {
+    background-color: rgb(119, 225, 233);
+    color: black;
+    border-radius: 5px;
+  }
+  
+  header h2 {
+    font-size: 30px;
+    color: red;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 200px;
+    margin-bottom: 400px;
+  }
+  
+  #main-title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 30px;
+  }
+  
+  #main-content {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  
+  #main-button-section {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    
+  }
+  
+  .answerChoiceButtons {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 0;
+  }
+  
+  .answerChoiceButtons:hover {
+    background-color: lightgreen;
+    color: black;
+  }
+  #main-sub-content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 20px;
+    width: 50%;
+  }
+  
+  #list-item {
+    list-style-type: none;
+  }
+  
+  .startButton {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 0;
+  }
+  
+  .startButton:hover {
+    background-color: lightgreen;
+    color: black;
+  }
+  
+  .submitButton {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 0;
+  }
+  
+  .submitButton:hover {
+    background-color: lightgreen;
+    color: black;
+  }
+  
+  footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-right: 35px;
+    /* position: fixed;
+    bottom: 0;  */
+  }
