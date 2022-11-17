@@ -154,7 +154,7 @@ function allDone() {
 
   questionsDiv.appendChild(createSubmit);
 
-  // Local Storage
+  // function to save final score in local storage and to pull the score from local storage to display in highscore list
   createSubmit.addEventListener("click", function () {
     var initials = createInput.value;
 
