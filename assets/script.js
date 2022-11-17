@@ -1,3 +1,4 @@
+//questions and multiple answer choices
 var questions = [
   {
     title: "What attribute do we use for data binding?",
@@ -27,7 +28,7 @@ var questions = [
   },
   {
     title:
-      "When an operator’s value is NULL, the typeof returned by the unary operator is:",
+      "When an operator's value is NULL, the typeof returned by the unary operator is:",
     choices: ["boolean", "integer", "object", "undefined"],
     answer: "object",
   },
@@ -40,7 +41,7 @@ var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
-//Creating the Timer
+//Timer
 var secondsLeft = 60;
 var holdInterval = 0;
 var penalty = 5;
@@ -99,7 +100,7 @@ function compare(event) {
   if (questionList >= questions.length) {
     allDone();
     createDiv.textContent =
-      "End of quiz!" +
+      "Finished!" +
       " " +
       "You got  " +
       score +
@@ -112,23 +113,23 @@ function compare(event) {
   questionsDiv.appendChild(createDiv);
 }
 
-//This is the end of the quiz
+//quiz is finished
 function allDone() {
   questionsDiv.innerHTML = "";
   currentTime.innerHTML = "";
 
   var createH1 = document.createElement("h1");
   createH1.setAttribute("id", "createH1");
-  createH1.textContent = "All Done!";
+  createH1.textContent = "Finished!";
 
   questionsDiv.appendChild(createH1);
 
-  // Stops timer and uses the number as a score
+  // timer is replaced by user's score
   if (secondsLeft >= 0) {
     var timeRemaining = secondsLeft;
     var createP = document.createElement("p");
     clearInterval(holdInterval);
-    createP.textContent = "Your final score is: " + timeRemaining;
+    createP.textContent = "Your score is: " + timeRemaining;
 
     questionsDiv.appendChild(createP);
   }
@@ -158,7 +159,7 @@ function allDone() {
     var initials = createInput.value;
 
     if (initials === null) {
-      alert("No value entered!");
+      alert("Enter a value!");
     } else {
       var finalScore = {
         initials: initials,
@@ -174,7 +175,7 @@ function allDone() {
       allScores.push(finalScore);
       var newScore = JSON.stringify(allScores);
       localStorage.setItem("allScores", newScore);
-      window.location.replace("highScores.html");
+      window.location.replace("highScore.html");
     }
   });
 }
