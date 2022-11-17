@@ -1,13 +1,13 @@
 var questions = [
   {
-    title: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    answer: "alerts",
+    title: "What attribute do we use for data binding?",
+    choices: ["datasrc", "mayscript", "name", "datafld"],
+    answer: "datasrc",
   },
   {
-    title: "The condition in an if / else statement is enclosed within ____.",
-    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-    answer: "parentheses",
+    title: "Which of the following keywords is used to define a variable in Javascript?",
+    choices: ["var", "let", "event", "both var & let"],
+    answer: "both var & let",
   },
   {
     title: "Arrays in Javascript can be used to store ____.",
@@ -27,9 +27,9 @@ var questions = [
   },
   {
     title:
-      "A very useful tool for used during development and debugging for printing content to the debugger is:",
-    choices: ["Javascript", "terminal / bash", "for loops", "console log"],
-    answer: "console log",
+      "When an operator’s value is NULL, the typeof returned by the unary operator is:",
+    choices: ["boolean", "integer", "object", "undefined"],
+    answer: "object",
   },
 ];
 
@@ -50,12 +50,12 @@ timer.addEventListener("click", function () {
   if (holdInterval === 0) {
     holdInterval = setInterval(function () {
       secondsLeft--;
-      currentTime.textContent = "Time Left: " + secondsLeft;
+      currentTime.textContent = "Remaining Time: " + secondsLeft;
 
       if (secondsLeft <= 0) {
         clearInterval(holdInterval);
         allDone();
-        currentTime.textContent = "Time's up!";
+        currentTime.textContent = "Your time is up!";
       }
     }, 1000);
   }
