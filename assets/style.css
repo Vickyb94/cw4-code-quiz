@@ -1,18 +1,15 @@
 /*styling for index.html*/
 a {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 25px;
+font-size: 20px;
 color: purple;
 }
+
 #startQuiz {
     background-color: purple;
     padding: 8px 10px;
     font-size: 20px;
     color: white;
-  }
-
-  Ul {
-    font-size: 25px;
   }
 
 h1 {
