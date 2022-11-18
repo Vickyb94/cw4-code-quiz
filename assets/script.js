@@ -2,10 +2,9 @@ var questionList = 0;
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startQuiz");
 var questionsDiv = document.querySelector("#questionsDiv");
-//var wrapper = document.querySelector("#wrapper");
 
 
-//array questions and multiple answer choices//
+//array questions and multiple answer choices//F
 var questions = [
   {
     title: "What attribute do we use for data binding?",
@@ -181,7 +180,7 @@ function allDone() {
       allScores.push(finalScore);
       var newScore = JSON.stringify(allScores);
       localStorage.setItem("allScores", newScore);
-      window.location.replace("highScore.html");
+      window.location.href = "highScore.html";
     }
   });
 }
