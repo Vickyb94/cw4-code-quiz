@@ -7,6 +7,7 @@ clear.addEventListener("click", function () {
   location.reload();
 });
 
+//pulling highscores from local storage to display in highscore list
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
@@ -17,7 +18,7 @@ if (allScores !== null) {
     highScore.appendChild(createLi);
   }
 }
-
+//event listener to replace the index.html at the click function//
 goBack.addEventListener("click", function () {
   window.location.replace("index.html");
 });
