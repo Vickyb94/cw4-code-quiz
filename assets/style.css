@@ -93,13 +93,3 @@ h1 {
     margin-bottom: 25px;
     text-align: center;
   }
-  
-  
-  /*@media screen and (max-width: 786px) {
-    body {
-      max-width: 786px;
-    }
-    #wrapper {
-      position: absolute;
-      left: 20%;
-    }
