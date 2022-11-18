@@ -2,10 +2,10 @@ var questionList = 0;
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startQuiz");
 var questionsDiv = document.querySelector("#questionsDiv");
-var wrapper = document.querySelector("#wrapper");
+//var wrapper = document.querySelector("#wrapper");
 
 
-//array questions and multiple answer choices
+//array questions and multiple answer choices//
 var questions = [
   {
     title: "What attribute do we use for data binding?",
@@ -56,17 +56,18 @@ timer.addEventListener("click", function () {
       secondsLeft--;
       currentTime.textContent = "Remaining Time: " + secondsLeft;
 
+//display a message when user runs out of time//
       if (secondsLeft <= 0) {
         clearInterval(holdInterval);
         allDone();
-        currentTime.textContent = "Your time is up!";
+        currentTime.textContent = "Game is Over!";
       }
     }, 1000);
   }
   render(questionList);
 });
 
-//create a function so that the list of questions runs on start
+//create a function so that the list of questions runs on start//
 function render(questionList) {
   questionsDiv.innerHTML = "";
   ulCreate.innerHTML = "";
@@ -75,6 +76,7 @@ function render(questionList) {
     var userChoices = questions[questionList].choices;
     questionsDiv.textContent = userQuestion;
   }
+  //create a function that will compare user answer to the correct answer//
   userChoices.forEach(function (newItem) {
     var listItem = document.createElement("li");
     listItem.textContent = newItem;
@@ -83,7 +85,6 @@ function render(questionList) {
     listItem.addEventListener("click", compare);
   });
 }
-//create a function that will compare user answer to the correct answer
 function compare(event) {
   var element = event.target;
   if (element.matches("li")) {
@@ -99,7 +100,7 @@ function compare(event) {
   }
 
   questionList++;
-
+//creating a display message when user finishes the quiz//
   if (questionList >= questions.length) {
     allDone();
     createDiv.textContent =

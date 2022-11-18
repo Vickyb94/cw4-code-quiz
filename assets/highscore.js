@@ -18,7 +18,8 @@ if (allScores !== null) {
     highScore.appendChild(createLi);
   }
 }
-//event listener to replace the index.html at the click function//
+//event listener to replace the index.html at the click//
 goBack.addEventListener("click", function () {
   window.location.replace("index.html");
 });
+

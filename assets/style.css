@@ -11,6 +11,10 @@ color: purple;
     color: white;
   }
 
+  Ul {
+    font-size: 25px;
+  }
+
 h1 {
     text-align: center;
     color: purple;
@@ -24,8 +28,8 @@ h1 {
   
   #Submit {
     background-color: purple;
-    margin-left: 33%;
-    padding: 15px 32px;
+    margin-left: 30%;
+    padding: 5px 20px;
     font-size: 20px;
     color: white;
   }
@@ -39,18 +43,11 @@ h1 {
     margin: auto;
   }
   
-  textarea {
-    width: 90%;
-    margin: 20px;
-  }
-  
-  label {
-    margin-right: 10px;
-  }
+
   input {
     margin-bottom: 20px;
-    width: 50%;
-    border: 1px solid lightgray;
+    width: 15%;
+    border: 3px solid purple;
   }
   
   li {
