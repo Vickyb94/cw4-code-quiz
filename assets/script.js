@@ -180,8 +180,8 @@ function allDone() {
       allScores.push(finalScore);
       var newScore = JSON.stringify(allScores);
       localStorage.setItem("allScores", newScore);
-      window.location.replace("highscore.html");
-     // window.location.href = "highscore.html";
+      //window.location.replace("highscore.html");
+      window.location.href = "highscore.html";
     }
   });
 }
