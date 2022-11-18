@@ -1,4 +1,11 @@
-//questions and multiple answer choices
+var questionList = 0;
+var currentTime = document.querySelector("#currentTime");
+var timer = document.querySelector("#startQuiz");
+var questionsDiv = document.querySelector("#questionsDiv");
+var wrapper = document.querySelector("#wrapper");
+
+
+//array questions and multiple answer choices
 var questions = [
   {
     title: "What attribute do we use for data binding?",
@@ -36,10 +43,6 @@ var questions = [
 
 var score = 0;
 var questionList = 0;
-var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#startTime");
-var questionsDiv = document.querySelector("#questionsDiv");
-var wrapper = document.querySelector("#wrapper");
 
 //Timer
 var secondsLeft = 60;
@@ -133,7 +136,7 @@ function allDone() {
 
     questionsDiv.appendChild(createP);
   }
-
+//appending label for user to enter initials
   var createLabel = document.createElement("label");
   createLabel.setAttribute("id", "createLabel");
   createLabel.textContent = "Enter your initials: ";
@@ -146,6 +149,8 @@ function allDone() {
   createInput.textContent = "";
 
   questionsDiv.appendChild(createInput);
+
+  //appending the submit button
 
   var createSubmit = document.createElement("button");
   createSubmit.setAttribute("type", "submit");
